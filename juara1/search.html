@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Game Center</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="navbar fixed-top navbar-expand-lg navbar-dark">
+    <nav class="container py-2">
+        <a href="index.html">
+            <img src="img/logo.png" alt="logo" height="36">
+        </a>
+        <button class="navbar-toggler" data-toggle="collapse" data-target=".collapse">
+            <span class="hamburger"></span>
+        </button>
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav align-items-lg-center mt-lg-0 mt-3 order-0 order-lg-0">
+                <li class="nav-item px-lg-3">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item px-lg-3">
+                    <a href="index.html#browse" class="nav-link">Store</a>
+                </li>
+                <li class="nav-item px-lg-3">
+                    <a href="index.html#news" class="nav-link">News</a>
+                </li>
+            </ul>
+            <ul class="navbar-nav order-2 order-lg-1 mt-2 mt-lg-0">
+                <li class="nav-item">
+                    <form action="search.html">
+                        <input type="text" class="form-control" placeholder="Search">
+                    </form>
+                </li>
+            </ul>
+            <ul class="navbar-nav ml-lg-auto order-1 order-lg-2">
+                <li class="nav-item px-lg-3">
+                    <a href="#" class="nav-link">Sign Up</a>
+                </li>
+                <li class="nav-item px-lg-3">
+                    <button class="btn btn-primary rounded-pill px-4 sign-in">Sign In</button>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</header>
+<main class="mt-5">
+    <div class="py-5 container mb-5" id="search">
+        <div class="title mt-3 mb-4">
+            <h2>Search result for "game"</h2>
+        </div>
+        <div class="row">
+            <div class="col-lg-3 col-md-4 mt-3">
+                <div class="rounded bg-lighter-black p-3">
+                    <h6 class="text-uppercase">Price Range</h6>
+                    <input type="number" class="form-control mb-2" placeholder="From">
+                    <input type="number" class="form-control mb-2" placeholder="To">
+                    <h6 class="text-uppercase mt-4">Sort By</h6>
+                    <select name="sort" id="sort" class="form-control">
+                        <option value="">Sort by</option>
+                    </select>
+                    <h6 class="text-uppercase mt-4">Filter Genre</h6>
+                    <div class="form-check">
+                        <input type="checkbox" id="action" value="action" class="form-check-input">
+                        <label for="action" class="form-check-label">Action</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" id="adventure" value="adventure" class="form-check-input">
+                        <label for="action" class="form-check-label">Adventure</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" id="rpg" value="rpg" class="form-check-input">
+                        <label for="action" class="form-check-label">RPG</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" id="simulation" value="simulation" class="form-check-input">
+                        <label for="action" class="form-check-label">Simulation</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" id="moba" value="moba" class="form-check-input">
+                        <label for="action" class="form-check-label">MOBA</label>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-9 col-md-8">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 mt-3">
+                        <div class="search-game rounded">
+                            <img src="img/minecraft/0ed5055450adbd836945761a6fa43ee0.jpg" alt="game">
+                            <div class="text p-2">
+                                <h3>Minecraft</h3>
+                                <ul class="genres">
+                                    <li>Adventure</li>
+                                    <li>Survival</li>
+                                </ul>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <h5>IDR 199.000</h5>
+                                    <button class="btn btn-primary text-uppercase">Buy</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 mt-3">
+                        <div class="search-game rounded">
+                            <img src="img/dota-2/d8732349cbe3ba46021a86345bb98c4c.png" alt="game">
+                            <div class="text p-2">
+                                <h3>DOTA 2</h3>
+                                <ul class="genres">
+                                    <li>MOBA</li>
+                                    <li>Action</li>
+                                </ul>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <h5>IDR 349.000</h5>
+                                    <button class="btn btn-primary text-uppercase">Buy</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 mt-3">
+                        <div class="search-game rounded">
+                            <img src="img/prince-of-persia/003b36afc53d4e078a9df02e0e43fb28.png" alt="game">
+                            <div class="text p-2">
+                                <h3>Prince of Persia</h3>
+                                <ul class="genres">
+                                    <li>Adventure</li>
+                                    <li>Action</li>
+                                </ul>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <h5>IDR 609.000</h5>
+                                    <button class="btn btn-primary text-uppercase">Buy</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+<footer class="pt-5">
+    <div class="container text-center">
+        <img src="img/logo-text.png" alt="logo" height="60">
+        <ul class="list-unstyled d-flex justify-content-center pt-5 pb-4">
+            <li class="px-4"><a href="#">Facebook</a></li>
+            <li class="px-4"><a href="#">Instagram</a></li>
+            <li class="px-4"><a href="#">Twitter</a></li>
+        </ul>
+    </div>
+    <p class="text-center py-4 mb-0">&copy; 2021 Game Center. All Rights Reserved.</p>
+</footer>
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
