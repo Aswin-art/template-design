@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virus Slayer</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
+</head>
+
+<body>
+    <div class="scoreArea">
+        <div class="score">TIME : <span id="time-text">00:00</span></div>
+        <div class="score">HIGHSCORE : <span id="highscore-text">0</span></div>
+        <div class="score">SCORE : <span id="score-text">0</span></div>
+        <div class="score">FAIL : <span id="fail-text">0</span></div>
+        <div class="score">PLAYER : <span id="player-text">-</span></div>
+    </div>
+
+    <div style="display: flex; justify-content: center; align-items: center; height: 100vh;">
+        <div class="gameArea limit">
+            <div class="lane">
+                <div class="item">
+                    <div id="key-d" class="key">D</div>
+                    <div class="dangerArea"></div>
+                </div>
+                <div class="item">
+                    <div id="key-f" class="key">F</div>
+                    <div class="dangerArea"></div>
+                </div>
+                <div class="item">
+                    <div id="key-j" class="key">J</div>
+                    <div class="dangerArea"></div>
+                </div>
+                <div class="item">
+                    <div id="key-k" class="key">K</div>
+                    <div class="dangerArea"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="screenModal" class="screenModal">
+        <div class="modal-body">
+            <div class="title">Game Instruction</div>
+
+            <div style="text-align: center;">
+                <img height="200px" src="./images/favicon.png" alt="">
+            </div>
+
+            <ul>
+                <li>Input Username and Click Play</li>
+                <li>Destroy Virus With <b>D F J K</b> Key</li>
+                <li>Reach HighScore</li>
+                <li>Enjoy</li>
+            </ul>
+
+            <div class="text-center">
+                <input id="username-input" type="text" class="custom-input" placeholder="Input Username">
+                <button id="playBtn" class="btn">PLAY</button>
+            </div>
+
+
+        </div>
+    </div>
+
+    <div id="gameOverModal" class="gameOverModal d-none">
+        <div class="modal-body">
+            <div class="title">Game Over</div>
+
+            <div class="score">TIME : <span id="time-text-2">00:00</span></div>
+            <div class="score">HIGHSCORE : <span id="highscore-text-2">0</span></div>
+            <div class="score">SCORE : <span id="score-text-2">0</span></div>
+            <div class="score">FAIL : <span id="fail-text-2">0</span></div>
+            <div class="score">PLAYER : <span id="player-text-2">-</span></div>
+
+            <div class="text-center">
+                <input id="username-input-2" type="text" class="custom-input" placeholder="Input Username">
+                <button id="restartBtn" class="btn">RESTART</button>
+            </div>
+
+
+        </div>
+    </div>
+
+    <div id="pauseModal" class="pauseModal d-none">
+        <div class="modal-body">
+            <div class="title">Game Paused</div>
+
+            <div class="text-center">
+                <button id="resumeBtn" class="btn" style="background-color: black !important;">CONTINUE</button>
+                <button id="restartBtn2" class="btn">RESTART</button>
+            </div>
+
+
+        </div>
+    </div>
+
+
+    <div id="countdownModal" class="d-none countdownModal">
+        <div class="modal-body clear-color">
+            <div id="count" class="count">3</div>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>

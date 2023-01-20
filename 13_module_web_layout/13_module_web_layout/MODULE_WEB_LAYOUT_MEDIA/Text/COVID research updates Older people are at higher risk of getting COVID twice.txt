@@ -1,0 +1,30 @@
+19 March — Older people are at higher risk of getting COVID twice
+
+An analysis of millions of coronavirus test results in Denmark suggests that natural infection with SARS-CoV-2 protects against reinfection in most people — but this protection is significantly weaker in those aged 65 years or older.
+
+Steen Ethelberg and his colleagues at the Statens Serum Institut in Copenhagen mined data from polymerase chain reaction tests, which are the gold-standard method for detecting SARS-CoV-2 infection, conducted in Denmark (C. H. Hansen et al. Lancet https://doi.org/gjg8qk; 2021). The team focused on people who tested positive for the coronavirus during one or both of Denmark’s two surges of infection — from March to May and from September to December — in 2020.
+
+The team found that, at about 6 months after initial infection, protection against repeat infection was approximately 80%, with no significant difference in reinfection rates between men and women. But this protection was reduced to 47% for those aged 65 years or older, emphasizing the need to prioritize vaccinations for this group.
+
+17 March — Concerns emerge over a COVID vaccine’s prowess against a variant
+
+A leading COVID-19 vaccine might offer only limited protection against a coronavirus variant first identified in South Africa.
+
+A SARS-CoV-2 variant called B.1.351 (also known as 501Y.V2), which was first identified in South Africa in late 2020, has been linked to reduced efficacy for vaccines developed by Novavax and Johnson & Johnson. Now, in another unintentional test of the variant’s effects, Shabir Madhi at the University of Witwatersrand in Johannesburg, South Africa, and his colleagues conducted a South Africa-based trial of the vaccine developed by the University of Oxford, UK, and AstraZeneca (S. A. Madhi et al. N. Engl. J. Med. https://doi.org/f2rd; 2021). The trial involved around 2,000 people aged 18–64, who had tested negative for HIV and were randomly assigned to receive either the jab or a placebo.
+
+The vaccine seemed to offer only 21.9% protection overall against the development of mild or moderate COVID-19, and just 10.4% against those cases caused by the B.1.351 variant. There were no cases of severe COVID-19 or hospitalization in either group, and the small size of the trial means the researchers can conclude only that the vaccine did not have an efficacy above 60% against B.1.351.
+
+16 March — One mutation could explain a coronavirus variant’s rampage
+
+A lone mutation might explain why a coronavirus variant that was identified in the United Kingdom has taken hold there and around the world.
+
+In late 2020, researchers found a fast-spreading variant, called B.1.1.7, in southeast England. It now accounts for nearly all UK COVID-19 cases and a steadily rising proportion of those in Europe, North America and elsewhere. B.1.1.7 carries eight changes in the virus’s spike protein — which helps the virus to enter host cells — and it has not been clear which mutations might explain its rapid spread.
+
+To better understand this, Pei-Yong Shi and Scott Weaver, at the University of Texas Medical Branch, Galveston, and their colleagues generated a bevy of SARS-CoV-2 strains, each with one of the individual spike mutations in B.1.1.7, as well as one carrying all eight (Y. Liu et al. Preprint at bioRxiv https://doi.org/f2js; 2021). Strains with a mutation called N501Y replicated more quickly in the upper respiratory tracts of hamsters and in airway cells from humans, compared with the other strains, and they also spread more readily between animals.
+
+Other mutations might contribute to the behaviour of B.1.1.7, the researchers say, but N501Y’s outsize effects on transmission make it one to watch for closely in other variants. The findings have not yet been peer reviewed.
+
+
+
+
+

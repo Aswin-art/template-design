@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Virus Slayer</title>
+    <link rel="shortcut icon" href="logo.png" type="image/x-icon">
+</head>
+
+<style>
+    html, body{
+        background: linear-gradient(to top, rgb(25, 10, 40), rgb(0, 80, 160));
+        min-height: 100vh;
+    }
+
+    .container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .game{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 400px;
+        height: 600px;
+    }
+
+    canvas{
+        background-color: rgba(0, 0, 0, .4);
+        box-shadow: 10px 0 15px -5px rgba(255, 255, 255, .1), -10px 0 15px -5px rgba(255, 255, 255, .1);
+    }
+
+    .time{
+        position: absolute;
+        left: 10px;
+        color: white;
+        font-size: 20px;
+    }
+    .modal{
+        position: absolute;
+        top: 20%;
+        right: 45%;
+        background-color: rgba(0, 0, 0, .7);
+        width: 200px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 150px;
+        display: none;
+    }
+
+    .restart{
+        padding: 10px;
+    }
+
+    .quit{
+        padding: 10px;
+    }
+
+    button:hover{
+        cursor: pointer;
+    }
+
+    .gameover{
+        position: absolute;
+        left: 42%;
+        top: 20%;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-color: black;
+        color: white;
+        padding: 10px;
+        border-radius: 1rem;
+        display: none;
+        width: 300px;
+    }
+
+    button{
+        background-color: rgb(0, 80, 160);
+        color: white;
+        border: none;
+        padding: 5px;
+        margin: 5px;
+        border-radius: .5rem;
+    }
+
+    .menu.disable{
+        display: none;
+    }
+
+    .input-user{
+        padding: 10px;
+        outline: none;
+        border: none;
+    }
+</style>
+<body>
+
+<div class="time">
+    <p>Time: <span id="timer">0</span></p>
+    <p>Score: <span id="score">0</span></p>
+    <p>Fail: <span id="fail">0</span></p>
+    <p>Player: <span id="player"></span></p>
+    <img src="./logo.png" alt="" width="300">
+    <h2>game Instruction</h2>
+    <p>1. Input username and click play</p>
+    <p>2. Destroy virus with D F J K key</p>
+    <p>3. Reach high score</p>
+    <p>4. Enjoy!!</p>
+
+    <input type="text" placeholder="Input username..." class="input-user">
+    <button class="next">Next</button>
+</div>
+
+<!--<div class="speedOption">-->
+<!--    <input type="range" name="" id="speedProgress" min="0" max="100">-->
+<!--</div>-->
+
+<div class="modal">
+    <button id="btn-modal btn-restart" class="restart">Restart</button>
+    <button id="btn-modal" class="quit">Quit</button>
+</div>
+
+<div class="gameover">
+    <h2>Game Over</h2>
+    <p>Player: <span id="playergameover"></span></p>
+    <p>Your score is <span class="totalScore"></span></p>
+    <p>Your total time is <span class="totalTime"></span></p>
+    <button class="restartGameOver">Restart</button>
+</div>
+
+<div class="container">
+    <div class="game">
+        <canvas id="game"></canvas>
+    </div>
+</div>
+
+<img src="./MODULE_CLIENT_SIDE_MEDIA/images/virus.png" alt="" hidden id="virus">
+
+<script src="index.js"></script>
+
+<script>
+    const player = document.getElementById('player')
+    player.innerHTML = localStorage.getItem('name')
+    const playerGameover = document.getElementById('playergameover')
+    playerGameover.innerHTML = localStorage.getItem('name')
+
+    const game = document.querySelector('.container .game')
+    // if(localStorage.getItem('name')){
+    //     game.innerHTML += '<canvas id="game"></canvas>'
+    // }
+
+    const next = document.querySelector('.next')
+    const input = document.querySelector('.input-user')
+    // input.addEventListener('change', function(){
+    //     localStorage.setItem('name', input.value)
+    // })
+    next.addEventListener('click', function(){
+        if(input.value !== ''){
+            localStorage.setItem('name', input.value)
+
+        }
+    })
+
+</script>
+
+</body>
+</html>

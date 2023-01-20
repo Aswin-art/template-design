@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virus Slayer</title>
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="counting">
+        <div class="counting_main">
+            <h1 id="count">3</h1>
+        </div>
+    </div>
+    <div class="wrapper">
+        <div class="container">
+            <div class="menu">
+                <h2>Virus Slayer</h2>
+                <p onClick="restart()">Restart</p>
+                <p onClick="quit()">Quit</p>
+            </div>
+            <div class="board">
+                <h2>Score Board</h2>
+                <p id="time">Time: </p>
+                <p id="score">Score: 0</p>
+                <p id="fail">Fail: 0</p>
+                <p id="player">Player: </p>
+            </div>
+            <div class="offside">
+    
+            </div>
+            <canvas id="game">
+            
+            </canvas>
+            <div class="buttons">
+                <button id="d"><img src="images/d.png" alt="icon"></button>
+                <button id="f"><img src="images/f.png" alt="icon"></button>
+                <button id="j"><img src="images/j.png" alt="icon"></button>
+                <button id="k"><img src="images/k.png" alt="icon"></button>
+            </div>
+        </div>
+    </div>
+
+    <div class="gameover">
+        <div class="gameover_main">
+            <h2>Game Over</h2>
+            <p id="time_over"></p>
+            <p id="total_score"></p>
+            <p id="name"></p>
+            <button onclick="restart()">Restart</button>
+        </div>
+    </div>
+
+    <div class="preloader">
+        <div class="preloader_main">
+            <img src="images/logo.png" alt="">
+            <h3>Instruction Virus Slayer</h3>
+            <p>1. Input username</p>
+            <p>2. Destroy virus with D, J, K, and F key</p>
+            <p>3. Reach Highscore</p>
+            <p>4. Enjoy</p>
+            <input type="text" autocomplete="off" id="user" placeholder="Input Username"><br/>
+            <button id="play">Play</button>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+    
+</body>
+</html>

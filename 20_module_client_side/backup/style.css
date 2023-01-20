@@ -1,0 +1,225 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: lightblue;
+    overflow: hidden;
+}
+
+.gameArea {
+    overflow: hidden;
+    width: 400px;
+    height: 100vh;
+    margin: 0px auto;
+    background-color: rgb(59, 59, 59);
+    border-left: 5px solid black;
+    border-right: 5px solid black;
+    border-top: 5px solid black;
+}
+
+
+.lane {
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.item {
+    display: flex;
+    flex-direction: column-reverse;
+    background-color: transparent;
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+    max-height: 960px;
+}
+
+
+
+.virus {
+    /* width: 25%; */
+    position: absolute;
+    height: 100px;
+    padding: 10px;
+    top: 0;
+}
+
+.dangerArea {
+    width: 100%;
+    height: 300px;
+    align-self: flex-end;
+    background-color: red;
+    filter: brightness(0.3);
+}
+
+.key {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: purple;
+    align-self: flex-end;
+    font-size: 15px;
+    font-weight: bolder;
+    color: white;
+    border-top: 5px solid grey;
+    border-bottom: 5px solid black;
+}
+
+.bright {
+    border-top: 5px solid white !important;
+}
+
+
+.gameOverModal {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10%;
+}
+
+.title-2 {
+    text-align: center !important;
+}
+
+.screenModal {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 8%;
+}
+
+.pauseModal {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10%;
+}
+
+.countdownModal {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10%;
+}
+
+.modal-body {
+    width: 50%;
+    padding: 20px;
+    background-color: rgb(88, 88, 88);
+    margin: auto;
+    border-radius: 8px;
+    color: white;
+}
+
+.modal-body ul {
+    padding: 20px;
+}
+
+.modal-body ul * {
+    line-height: 1.5;
+}
+
+.title {
+    font-size: 20px;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.custom-input {
+    border: none;
+    border-radius: 4px;
+    background-color: rgb(63, 63, 63);
+    text-align: center;
+    font-size: 12px;
+    padding: 15px;
+    width: 100%;
+    height: 30px;
+    color: white;
+}
+
+.btn {
+    width: 100%;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: red;
+    color: white;
+    margin-top: 10px !important;
+    border: none;
+    border-radius: 4px;
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+.d-none {
+    display: none;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.disappear {
+    transform: scale(0);
+    transition: 500ms;
+}
+
+.blow {
+    transform: scale(1.5);
+    transition: 500ms;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.clear-color {
+    background-color: transparent !important;
+}
+
+.count {
+    font-size: 50px;
+    font-weight: bolder;
+    color: white;
+    text-align: center;
+}
+
+.scoreArea {
+    width: 150px;
+    /* text-align: ; */
+    background-color: rgb(68, 68, 68);
+    color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin: 20px;
+    border-radius: 4px;
+    padding: 10px;
+}
+
+.score span {
+    font-weight: bolder;
+    line-height: 1.5;
+}
